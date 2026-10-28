@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: LicenseRef-GDE-PolyForm-NC-1.0.0-plus-terms
+# Modified by GustavoARodri on 2026-10-27: Exclude local configuration, logs, game media, and build output.
+
+# Per-user launcher settings and runtime logs
+launcher-settings.json
+**/launcher-settings.json
+logs/
+**/logs/
+**/diagnostico/
+
+# Game data supplied by the player; never commit disc images or extracted assets
+*.iso
+*.pss
+*.ark
+*.hdr
+
+# Local engine/build output and generated user settings
+**/build/
+**/enhanced.json.backup*
+**/enhanced.json.launcher-initial-backup
